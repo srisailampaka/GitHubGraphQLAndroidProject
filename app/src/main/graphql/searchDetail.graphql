@@ -1,0 +1,28 @@
+query searchDetail($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    id
+    name
+    description
+    forks {
+      totalCount
+    }
+    stargazers {
+      totalCount
+    }
+    watchers {
+      totalCount
+    }
+    pullRequests {
+      totalCount
+    }
+    issues(last: 20, states: OPEN) {
+      totalCount
+      edges {
+        node {
+          title
+          url
+        }
+      }
+    }
+  }
+}

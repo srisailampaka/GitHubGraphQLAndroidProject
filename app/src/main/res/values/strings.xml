@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GitHubGraphQlAPIProject</string>
+    <string name="tts_user_image">User Image</string>
+    <string name="search_repo_here">Search Repository Here</string>
+    <string name="forks">Forks : %1$s</string>
+    <string name="watchers">Watchers : %1$s</string>
+    <string name="pull_request">Pull Requests : %1$s</string>
+</resources>

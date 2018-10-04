@@ -1,0 +1,23 @@
+query listRepos($queryString: String!,$itemsCount:Int!){
+
+search(query:$queryString, type:REPOSITORY, first:$itemsCount){
+  repositoryCount
+  edges{
+   node{
+    ... on Repository{
+     id
+     name
+     description
+     forks{
+      totalCount
+    }
+     owner{
+      login
+      id
+      avatarUrl
+     }
+    }
+   }
+  }
+ }
+}
